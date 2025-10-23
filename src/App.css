@@ -1,0 +1,134 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.App.light {
+  background-color: white;
+  color: black;
+}
+
+.App.dark {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+header {
+  background-color: #f8f9fa;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.App.dark header {
+  background-color: #333;
+  color: white;
+}
+
+header h2 {
+  margin: 0;
+  color: #333;
+}
+
+.App.dark header h2 {
+  color: white;
+}
+
+header button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+header button:hover {
+  background-color: #0056b3;
+}
+
+.ShoppingList {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.App.dark .ShoppingList {
+  background-color: #2a2a2a;
+}
+
+.Filter {
+  margin-bottom: 20px;
+}
+
+.Filter select {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: white;
+}
+
+.App.dark .Filter select {
+  background-color: #333;
+  color: white;
+  border-color: #555;
+}
+
+.Items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Item {
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.App.dark .Item {
+  background-color: #333;
+  border-color: #555;
+  color: white;
+}
+
+.Item.in-cart {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.App.dark .Item.in-cart {
+  background-color: #155724;
+  border-color: #0f4018;
+}
+
+.Item .category {
+  color: #6c757d;
+  font-style: italic;
+}
+
+.App.dark .Item .category {
+  color: #ccc;
+}
+
+.Item .add {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Item .add:hover {
+  background-color: #218838;
+}
